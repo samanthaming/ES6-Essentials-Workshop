@@ -1,5 +1,5 @@
 const person = {
-  name: "sam"
+  name: 'sam'
 };
 
 console.log(personCopy);

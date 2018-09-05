@@ -1,10 +1,10 @@
 const person = {
-  name: "sam"
+  name: 'sam'
 };
 
 const socialMedia = {
-  twitter: "samantha_ming",
-  instagram: "samanthaming"
+  twitter: 'samantha_ming',
+  instagram: 'samanthaming'
 };
 
 console.log(combined);

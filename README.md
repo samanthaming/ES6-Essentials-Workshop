@@ -1,7 +1,5 @@
 # ES6 Only the Essentials Workshop
 
-The Top 10 ES6 Topics You Should Know
-
 Welcome! This workshop I cover the most important part of the new ES6 syntax to get you up and running 🤩
 
 ### Topics include:

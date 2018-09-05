@@ -1,3 +1,4 @@
-const name = "Samantha";
+const name = 'samantha';
 
+// 'hello Samantha'
 `hello ${name}`;
