@@ -1,4 +1,4 @@
 const name = 'samantha';
 
-// 'hello Samantha'
+// "hello SAMANTHA"
 `hello ${name}`;

@@ -1,6 +1,6 @@
 # ES6 Only the Essentials Workshop
 
-Welcome! This workshop I cover the most important part of the new ES6 syntax to get you up and running 🤩
+Welcome! This workshop I introduce some of the most important part of the new ES6 syntax to get you up and running 🤩
 
 ### Topics include:
 1. Variables

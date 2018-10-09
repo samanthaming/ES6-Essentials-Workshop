@@ -1,5 +1,5 @@
 const airports = {
-  'YVR': 'Vancouver International Aiport',
+  'YVR': 'Vancouver International Airport',
   'JFK': 'John F. Kennedy International Airport',
   'LAX': 'Los Angeles International Airport'
 };

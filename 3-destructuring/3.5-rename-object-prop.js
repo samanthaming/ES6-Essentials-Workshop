@@ -1,5 +1,5 @@
 const person = {
-  name: 'sam',
+  name: 'samantha',
   twitter: 'samantha_ming',
   instagram: 'samanthaming',
   action: 'follow her for JS, HTML, CSS Tips!',
