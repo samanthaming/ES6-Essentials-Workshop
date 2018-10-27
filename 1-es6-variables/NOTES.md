@@ -50,7 +50,7 @@ console.log(hello); // "hey"
 
 ## Using `const` with Reference Types 👽
 
-If you're familar with reference types, then move on. If not, you will find the following interesting.
+If you're familiar with reference types, then move on. If not, you will find the following interesting.
 
 Example: `const` with Arrays
 
@@ -82,14 +82,41 @@ shape = {color: 'red'} // TypeError: Assignment to constant variable.
 
 This works because Arrays and Objects are **reference** types. They don't hold values, they are a pointer to the values in memory. As long as you're not changing the pointer, you're good. That's why you can push to an array or add properties to an object. Because you're not actually changing the pointer, you're only changing the value which the pointer is pointing to. The `const` only locks in the pointer not the value of the pointer. 
 
-**UGH, I still don't get! 😩**
+**UGH, I still don't get it! 😩**
 
 Think of reference types as your house address. The house is your `const`. The `const` locks in your house address. You can re-decorate the house however you want -- add furnitures, paint your room green, fill it with new appliances. The `const` police doesn't care what you do with your house. The only thing they care about is your house address because they want to know where you live 🤭! So if you try to change that, that's when they step in and give you an error 🛑
 
-## Temporary Dead Zone
+## Temporal Dead Zone (TDZ)
+
+To understand what is this temporary dead zone, let's see how normal `var` works.
+
+Typically, we always declare our variable before we use it.
 
 ```javascript
+// No problem here
+var regularVar = 'hello';
+console.log(regularVar); // 'hello'
+```
 
+What happens, when we call the variable BEFORE we declared it?
+
+```javascript
+console.log(regularVar); // undefined
+var regularVar = 'hello';
+```
+
+You get `undefined`. This has do to with how the JS Compiler works. Most of you might have heard the term 'hoisting' -- the `var` is hoisted and brought to the top. 
+
+I'm not going to get into details, but if you're interested in learning more, check out [You Dont Know JS by Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch1.md#compiler-theory)
+
+BUT when it comes to `const` or `let`, those variables do not get hoisted. You will actually get an `ReferenceError` if you try to use it before defining it.
+
+```javascript
+console.log(usingLet); // ReferenceError
+let usingLet = 'hello';
+
+console.log(usingConst); // ReferenceError
+const usingConst = 'hello';
 ```
 
 ## Which to use?
