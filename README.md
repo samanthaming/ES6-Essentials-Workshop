@@ -12,7 +12,7 @@ Welcome! This workshop I introduce some of the most important part of the new ES
 7. Enhanced Object Literals
 8. Arrow Functions
 9. Array Methods
-10. Object methods
+10. Object Methods
 
 ### Who is the workshop for?
 
